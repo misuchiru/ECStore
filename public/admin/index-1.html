@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+<meta name="author" content="Coderthemes">
+<link rel="shortcut icon" href="images/favicon_1.ico">
+<title>客家藝文資訊網-管理系統</title>
+
+<!-- Base Css Files -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Font Icons -->
+<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<link href="assets/ionicon/css/ionicons.min.css" rel="stylesheet" />
+<link href="css/material-design-iconic-font.min.css" rel="stylesheet">
+
+<!-- animate css -->
+<link href="css/animate.css" rel="stylesheet" />
+
+<!-- Waves-effect -->
+<link href="css/waves-effect.css" rel="stylesheet">
+
+<!-- sweet alerts -->
+<link href="assets/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+
+<!-- Custom Files -->
+<link href="css/helper.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+<script src="js/modernizr.min.js"></script>
+</head>
+
+<body class="fixed-left">
+
+<!-- Begin page -->
+<div id="wrapper"> 
+  
+  <!-- Top Bar Start -->
+  <div class="topbar"> 
+    <!-- LOGO -->
+    <div class="topbar-left">
+      <div class="text-center"> <a href="index.html" class="logo"><span>客家藝文資訊網管理系統 </span></a> </div>
+    </div>
+    <!-- Button mobile view to collapse sidebar menu -->
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="">
+          <ul class="nav navbar-nav navbar-right pull-right">
+            <a class="fileUpload btn btn-success waves-effect waves-light pd1" href="#"><i class="fa fa-pencil m-r-5"></i>修改密碼</a> <a class="fileUpload btn btn-danger waves-effect waves-light pd1" href="#"><i class="fa fa-sign-out m-r-5"></i>登出</a>
+          </ul>
+        </div>
+        <!--/.nav-collapse --> 
+      </div>
+    </div>
+  </div>
+  <!-- Top Bar End --> 
+  
+  <!-- ========== Left Sidebar Start ========== -->
+  
+  <div class="left side-menu">
+    <div class="sidebar-inner slimscrollleft">
+      <div class="user-details">
+        <div class="pull-left"> <img src="images/users/boy.jpg" alt="" class="thumb-md img-circle"> </div>
+        <div class="user-info">
+          <div class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Jim</a> </div>
+          <p class="text-muted m-0">系統管理者</p>
+        </div>
+      </div>
+      <!--- Divider -->
+      <div id="sidebar-menu">
+        <ul>
+          <li> <a href="index.html" class="waves-effect active"><i class="md md-home"></i>首頁</a> </li>
+          <li> <a href="intro.html" class="waves-effect"><i class="md md-account-circle"></i>藝人/團體介紹</a> </li>
+          <li> <a href="info.html" class="waves-effect"><i class=" md-insert-photo"></i>藝文活動資訊</a></li>
+          <li> <a href="video.html" class="waves-effect"><i class="md md-movie"></i>藝文活動影音</a></li>
+          <li> <a href="photo.html" class="waves-effect"><i class="md md-camera"></i>藝文活動剪影</a></li>
+          <li> <a href="theme.html" class="waves-effect"><i class="md md-domain"></i>藝文展演館</a></li>
+          <li> <a href="contact.html" class="waves-effect"><i class="md md-mood"></i>聯絡我們</a></li>
+          <li class="has_sub"> <a href="system_user.html" class="waves-effect"><i class="md-settings"></i>系統管理<span class="pull-right"><i class="md md-add"></i></span></a>
+            <ul class="list-unstyled">
+              <li><a href="system_user.html">帳號管理</a></li>
+              <li><a href="system_daily.html">系統日誌</a></li>
+            </ul>
+          </li>
+          <li class="has_sub">
+            <ul class="list-unstyled">
+              <li><a href="gmap.html"> Google Map</a></li>
+              <li><a href="vector-map.html"> Vector Map</a></li>
+            </ul>
+          </li>
+          <li class="has_sub">
+            <ul class="list-unstyled">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="timeline.html">Timeline</a></li>
+              <li><a href="invoice.html">Invoice</a></li>
+              <li><a href="email-template.html">Email template</a></li>
+              <li><a href="contact.html">Contact-list</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="recoverpw.html">Recover Password</a></li>
+              <li><a href="lock-screen.html">Lock Screen</a></li>
+              <li><a href="blank.html">Blank Page</a></li>
+              <li><a href="maintenance.html">Maintenance</a></li>
+              <li><a href="coming-soon.html">Coming-soon</a></li>
+              <li><a href="404.html">404 Error</a></li>
+              <li><a href="404_alt.html">404 alt</a></li>
+              <li><a href="500.html">500 Error</a></li>
+            </ul>
+          </li>
+          <li class="has_sub">
+            <ul>
+              <li class="has_sub"> <a href="javascript:void(0);" class="waves-effect"><span>Menu Level 1.1</span> <span class="pull-right"><i class="md md-add"></i></span></a>
+                <ul style="">
+                  <li><a href="javascript:void(0);"><span>Menu Level 2.1</span></a></li>
+                  <li><a href="javascript:void(0);"><span>Menu Level 2.2</span></a></li>
+                  <li><a href="javascript:void(0);"><span>Menu Level 2.3</span></a></li>
+                </ul>
+              </li>
+              <li> <a href="javascript:void(0);"><span>Menu Level 1.2</span></a> </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <!-- Left Sidebar End --> 
+  
+  <!-- ============================================================== --> 
+  <!-- Start right Content here --> 
+  <!-- ============================================================== -->
+  <div class="content-page"> 
+    <!-- Start content -->
+    <div class="content">
+      <div class="container"> 
+        
+        <!-- Page-Title -->
+        <div class="row">
+          <div class="col-sm-12">
+            <h4 class="pull-left page-title">Welcome !</h4>
+            <ol class="breadcrumb pull-right">
+              <li class="active">首頁</li>
+            </ol>
+          </div>
+        </div>
+        
+        <!-- Start Widget --> 
+        <!-- End row-->
+        
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="portlet"><!-- /portlet heading -->
+              <div class="portlet-heading">
+                <h3 class="portlet-title text-dark text-uppercase"> 每日訪客造訪次數 </h3>
+                <div class="clearfix"></div>
+              </div>
+              <div id="portlet1" class="panel-collapse collapse in">
+                <div class="portlet-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="website-stats" style="position: relative;height: 320px;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Portlet --> 
+          </div>
+          <!-- end col --> 
+          
+        </div>
+        <!-- End row -->
+        
+        <div class="row"> 
+          <!-- INBOX -->
+          <div class="col-lg-6">
+            <div class="panel panel-color panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">訪客地區來源</h4>
+              </div>
+              <div class="panel-body">
+                <table width="100%" class="table table-inner table-vmiddle">
+                  <thead>
+                    <tr>
+                      <th width="24%">排序</th>
+                      <th width="60%">國家/地區</th>
+                      <th width="16%" style="width: 60px">工作階段</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="f-500 c-cyan">1</td>
+                      <td><img src="images/a_03.jpg" width="16" height="11" alt=""/> Taiwan</td>
+                      <td class="f-500 c-cyan">815</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">2</td>
+                      <td><img src="images/a_06.jpg" width="16" height="11" alt=""/> China</td>
+                      <td class="f-500 c-cyan">47</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">3</td>
+                      <td><img src="images/a_08.jpg" width="16" height="11" alt=""/> Hong Kong</td>
+                      <td class="f-500 c-cyan">40</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">4</td>
+                      <td><img src="images/a_10.jpg" width="16" height="11" alt=""/> United States</td>
+                      <td class="f-500 c-cyan">28</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">5</td>
+                      <td><img src="images/a_12.jpg" width="16" height="11" alt=""/> Malaysia</td>
+                      <td class="f-500 c-cyan">20</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">6</td>
+                      <td>(not set)</td>
+                      <td class="f-500 c-cyan">17</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">7</td>
+                      <td><img src="images/a_14.jpg" width="16" height="11" alt=""/> Japan</td>
+                      <td class="f-500 c-cyan">10</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">8</td>
+                      <td><img src="images/a_16.jpg" width="16" height="11" alt=""/> Australia</td>
+                      <td class="f-500 c-cyan">8</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">9</td>
+                      <td><img src="images/a_18.jpg" width="16" height="11" alt=""/> Indonesia</td>
+                      <td class="f-500 c-cyan">5</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">10</td>
+                      <td><img src="images/a_20.jpg" width="16" height="11" alt=""/> United Kingdom</td>
+                      <td class="f-500 c-cyan">4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="panel panel-color panel-success">
+              <div class="panel-heading">
+                <h4 class="panel-title">瀏覽器統計</h4>
+              </div>
+              <div class="panel-body">
+                <table width="100%" class="table table-inner table-vmiddle">
+                  <thead>
+                    <tr>
+                      <th width="10%">排序</th>
+                      <th width="76%">名稱</th>
+                      <th width="14%" style="width: 60px">次數</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="f-500 c-cyan">1</td>
+                      <td>Chrome</td>
+                      <td class="f-500 c-cyan">628</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">2</td>
+                      <td>Internet Explorer</td>
+                      <td class="f-500 c-cyan">168</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">3</td>
+                      <td>Safari</td>
+                      <td class="f-500 c-cyan">105</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">4</td>
+                      <td>Firefox</td>
+                      <td class="f-500 c-cyan">47</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">5</td>
+                      <td>Android Browser</td>
+                      <td class="f-500 c-cyan">41</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">6</td>
+                      <td>Safari (in-app)</td>
+                      <td class="f-500 c-cyan">29</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">7</td>
+                      <td>Edge</td>
+                      <td class="f-500 c-cyan">5</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">8</td>
+                      <td>(not set)</td>
+                      <td class="f-500 c-cyan">2</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">9</td>
+                      <td>Opera</td>
+                      <td class="f-500 c-cyan">1</td>
+                    </tr>
+                    <tr>
+                      <td class="f-500 c-cyan">10</td>
+                      <td>Opera Mini</td>
+                      <td class="f-500 c-cyan">1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end row --> 
+        
+      </div>
+      <!-- container --> 
+      
+    </div>
+    <!-- content -->
+    
+    <footer class="footer text-right"> 2015 © 客委會 客家藝文資訊網 </footer>
+  </div>
+  <!-- ============================================================== --> 
+  <!-- End Right content here --> 
+  <!-- ============================================================== --> 
+  
+  <!-- Right Sidebar -->
+  <div class="side-bar right-bar nicescroll">
+    <h4 class="text-center">Chat</h4>
+    <div class="contact-list nicescroll">
+      <ul class="list-group contacts-list">
+        <li class="list-group-item"> <a href="#">
+          <div class="avatar"> <img src="images/users/avatar-1.jpg" alt=""> </div>
+          <span class="name">Chadengle</span> <i class="fa fa-circle online"></i> </a> <span class="clearfix"></span> </li>
+        <li class="list-group-item"> <a href="#">
+          <div class="avatar"> <img src="images/users/avatar-2.jpg" alt=""> </div>
+          <span class="name">Tomaslau</span> <i class="fa fa-circle online"></i> </a> <span class="clearfix"></span> </li>
+        <li class="list-group-item"> <a href="#">
+          <div class="avatar"> <img src="images/users/avatar-3.jpg" alt=""> </div>
+          <span class="name">Stillnotdavid</span> <i class="fa fa-circle online"></i> </a> <span class="clearfix"></span> </li>
+        <li class="list-group-item"> <a href="#">
+          <div class="avatar"> <img src="images/users/avatar-4.jpg" alt=""> </div>
+          <span class="name">Kurafire</span> <i class="fa fa-circle online"></i> </a> <span class="clearfix"></span> </li>
+        <li class="list-group-item"> <a href="#">
+          <div class="avatar"> <img src="images/users/avatar-5.jpg" alt=""> </div>
+          <span class="name">Shahedk</span> <i class="fa fa-circle away"></i> </a> <span class="clearfix"></span> </li>
+        <li class="list-group-item"> <a href="#">
+          <div class="avatar"> <img src="images/users/avatar-6.jpg" alt=""> </div>
+          <span class="name">Adhamdannaway</span> <i class="fa fa-circle away"></i> </a> <span class="clearfix"></span> </li>
+        <li class="list-group-item"> <a href="#">
+          <div class="avatar"> <img src="images/users/avatar-7.jpg" alt=""> </div>
+          <span class="name">Ok</span> <i class="fa fa-circle away"></i> </a> <span class="clearfix"></span> </li>
+        <li class="list-group-item"> <a href="#">
+          <div class="avatar"> <img src="images/users/avatar-8.jpg" alt=""> </div>
+          <span class="name">Arashasghari</span> <i class="fa fa-circle offline"></i> </a> <span class="clearfix"></span> </li>
+        <li class="list-group-item"> <a href="#">
+          <div class="avatar"> <img src="images/users/avatar-9.jpg" alt=""> </div>
+          <span class="name">Joshaustin</span> <i class="fa fa-circle offline"></i> </a> <span class="clearfix"></span> </li>
+        <li class="list-group-item"> <a href="#">
+          <div class="avatar"> <img src="images/users/avatar-10.jpg" alt=""> </div>
+          <span class="name">Sortino</span> <i class="fa fa-circle offline"></i> </a> <span class="clearfix"></span> </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /Right-bar --> 
+  
+</div>
+<!-- END wrapper --> 
+
+<script>
+            var resizefunc = [];
+        </script> 
+
+<!-- jQuery  --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/waves.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/jquery.nicescroll.js" type="text/javascript"></script> 
+<script src="js/jquery.scrollTo.min.js"></script> 
+<script src="assets/chat/moment-2.2.1.js"></script> 
+<script src="assets/jquery-sparkline/jquery.sparkline.min.js"></script> 
+<script src="assets/jquery-detectmobile/detect.js"></script> 
+<script src="assets/fastclick/fastclick.js"></script> 
+<script src="assets/jquery-slimscroll/jquery.slimscroll.js"></script> 
+<script src="assets/jquery-blockui/jquery.blockUI.js"></script> 
+
+<!-- sweet alerts --> 
+<script src="assets/sweet-alert/sweet-alert.min.js"></script> 
+<script src="assets/sweet-alert/sweet-alert.init.js"></script> 
+
+<!-- flot Chart --> 
+<script src="assets/flot-chart/jquery.flot.js"></script> 
+<script src="assets/flot-chart/jquery.flot.time.js"></script> 
+<script src="assets/flot-chart/jquery.flot.tooltip.min.js"></script> 
+<script src="assets/flot-chart/jquery.flot.resize.js"></script> 
+<script src="assets/flot-chart/jquery.flot.pie.js"></script> 
+<script src="assets/flot-chart/jquery.flot.selection.js"></script> 
+<script src="assets/flot-chart/jquery.flot.stack.js"></script> 
+<script src="assets/flot-chart/jquery.flot.crosshair.js"></script> 
+
+<!-- Counter-up --> 
+<script src="assets/counterup/waypoints.min.js" type="text/javascript"></script> 
+<script src="assets/counterup/jquery.counterup.min.js" type="text/javascript"></script> 
+
+<!-- CUSTOM JS --> 
+<script src="js/jquery.app.js"></script> 
+
+<!-- Dashboard --> 
+<script src="js/jquery.dashboard.js"></script> 
+
+<!-- Chat --> 
+<script src="js/jquery.chat.js"></script> 
+
+<!-- Todo --> 
+<script src="js/jquery.todo.js"></script> 
+<script type="text/javascript">
+            /* ==============================================
+            Counter Up
+            =============================================== */
+            jQuery(document).ready(function($) {
+                $('.counter').counterUp({
+                    delay: 100,
+                    time: 1200
+                });
+            });
+        </script>
+</body>
+</html>

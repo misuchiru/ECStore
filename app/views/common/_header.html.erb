@@ -1,0 +1,26 @@
+<!-- Top Bar Start -->
+<div class="topbar"> 
+<!-- LOGO -->
+<div class="topbar-left">
+  <div class="text-center"> <a href="index.html" class="logo"><span>ECStore管理系統</span></a> </div>
+</div>
+<!-- Button mobile view to collapse sidebar menu -->
+<div class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="">
+      <ul class="nav navbar-nav navbar-right pull-right">
+        <%= link_to(products_path, class: "fileUpload btn btn-success waves-effect waves-light pd1", target: "_blank") do %>
+            <i class="fa fa-pencil m-r-5"></i>
+            ECStore前台
+        <% end %>
+        <%= link_to(destroy_user_session_path, class: "fileUpload btn btn-danger waves-effect waves-light pd1", method: :delete) do %>
+          <i class="fa fa-sign-out m-r-5"></i>
+          登出
+        <% end %>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+</div>
+<!-- Top Bar End --> 

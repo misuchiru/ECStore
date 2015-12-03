@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ECStore</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= render "common/css" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="wrapper-page">
+  <div class="panel panel-color panel-primary panel-pages">
+    <div class="panel-heading bg-img">
+      <div class="bg-overlay"></div>
+      <h3 class="text-center m-t-10 text-white"> ECStore 登入 </h3>
+      </div>
+      <div class="panel-body"> 
+        <%= yield %>
+      </div>
+      </div>
+    </div>
+  <%= render "common/js" %>
+</body>
+</html>

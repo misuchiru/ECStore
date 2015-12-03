@@ -1,0 +1,82 @@
+<!-- ========== Left Sidebar Start ========== -->
+
+<div class="left side-menu">
+<div class="sidebar-inner slimscrollleft">
+  <div class="user-details">
+    <div class="pull-left"> <img src="/admin/images/users/boy.jpg" alt="" class="thumb-md img-circle"> </div>
+    <div class="user-info">
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <%= current_user.email %>
+        </a> 
+      </div>
+      <p class="text-muted m-0">
+        <% if current_user.admin? %>
+          系統管理者
+        <% else %>
+          一般使用者
+        <% end %>
+      </p>
+    </div>
+  </div>
+  <!--- Divider -->
+  <div id="sidebar-menu">
+    <ul>
+      <li> <a href="#" class="waves-effect active"><i class="md md-home"></i>首頁</a> </li>
+      <!-- <li> <a href="intro.html" class="waves-effect"><i class="md md-account-circle"></i>藝人/團體介紹</a> </li>
+      <li> <a href="info.html" class="waves-effect"><i class=" md-insert-photo"></i>藝文活動資訊</a></li>
+      <li> <a href="video.html" class="waves-effect"><i class="md md-movie"></i>藝文活動影音</a></li>
+      <li> <a href="photo.html" class="waves-effect"><i class="md md-camera"></i>藝文活動剪影</a></li>
+      <li> <a href="theme.html" class="waves-effect"><i class="md md-domain"></i>藝文展演館</a></li>
+      <li> <a href="contact.html" class="waves-effect"><i class="md md-mood"></i>聯絡我們</a></li> -->
+      <li class="has_sub"> 
+      <a href="system_user.html" class="waves-effect"><i class="md-settings"></i>系統管理<span class="pull-right"><i class="md md-add"></i></span></a>
+        <ul class="list-unstyled">
+          <%= link_to "帳號管理", admin_users_path %>
+          <li><a href="system_daily.html">系統日誌</a></li>
+        </ul>
+      </li>
+      <li class="has_sub">
+        <ul class="list-unstyled">
+          <li><a href="gmap.html"> Google Map</a></li>
+          <li><a href="vector-map.html"> Vector Map</a></li>
+        </ul>
+      </li>
+      <li class="has_sub">
+        <ul class="list-unstyled">
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="invoice.html">Invoice</a></li>
+          <li><a href="email-template.html">Email template</a></li>
+          <li><a href="contact.html">Contact-list</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="recoverpw.html">Recover Password</a></li>
+          <li><a href="lock-screen.html">Lock Screen</a></li>
+          <li><a href="blank.html">Blank Page</a></li>
+          <li><a href="maintenance.html">Maintenance</a></li>
+          <li><a href="coming-soon.html">Coming-soon</a></li>
+          <li><a href="404.html">404 Error</a></li>
+          <li><a href="404_alt.html">404 alt</a></li>
+          <li><a href="500.html">500 Error</a></li>
+        </ul>
+      </li>
+      <li class="has_sub">
+        <ul>
+          <li class="has_sub"> <a href="javascript:void(0);" class="waves-effect"><span>Menu Level 1.1</span> <span class="pull-right"><i class="md md-add"></i></span></a>
+            <ul style="">
+              <li><a href="javascript:void(0);"><span>Menu Level 2.1</span></a></li>
+              <li><a href="javascript:void(0);"><span>Menu Level 2.2</span></a></li>
+              <li><a href="javascript:void(0);"><span>Menu Level 2.3</span></a></li>
+            </ul>
+          </li>
+          <li> <a href="javascript:void(0);"><span>Menu Level 1.2</span></a> </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+</div>
+<!-- Left Sidebar End --> 
