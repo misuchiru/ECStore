@@ -1,0 +1,38 @@
+<h2> 活動橫幅列表 </h2>
+<div class="pull-right" style="padding-bottom: 20px;">
+  <%= link_to(new_admin_carousel_path, class: "btn btn-primary btn-sm waves-effect waves-light") do %>
+    <i class="fa fa-plus"></i>
+    新增活動橫幅
+  <% end %>
+</div>
+<table class="table table-bordered">
+  <thead>
+    <tr class="info">
+      <th>#</th>
+      <th>標題</th>
+      <th>說明</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @carousels.each do |carousel| %>
+      <tr>
+        <td>
+          <%= carousel.id %>
+        </td>
+        <td>
+          <%= carousel.title %>
+        </td>
+        <td>
+          <%= carousel.description %>
+        </td>
+        <td>
+          <%= link_to(edit_admin_carousel_path(carousel), class: "btn btn-success btn-sm waves-effect waves-light") do %>
+            <i class="fa fa-pencil"></i>
+            編輯
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

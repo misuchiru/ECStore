@@ -23,12 +23,18 @@
   <div id="sidebar-menu">
     <ul>
       <li> <a href="#" class="waves-effect active"><i class="md md-home"></i>首頁</a> </li>
-      <!-- <li> <a href="intro.html" class="waves-effect"><i class="md md-account-circle"></i>藝人/團體介紹</a> </li>
-      <li> <a href="info.html" class="waves-effect"><i class=" md-insert-photo"></i>藝文活動資訊</a></li>
-      <li> <a href="video.html" class="waves-effect"><i class="md md-movie"></i>藝文活動影音</a></li>
-      <li> <a href="photo.html" class="waves-effect"><i class="md md-camera"></i>藝文活動剪影</a></li>
-      <li> <a href="theme.html" class="waves-effect"><i class="md md-domain"></i>藝文展演館</a></li>
-      <li> <a href="contact.html" class="waves-effect"><i class="md md-mood"></i>聯絡我們</a></li> -->
+      <li> 
+        <%= link_to(admin_products_path, class: "waves-effect") do %>
+          <i class="fa fa-cubes"></i>
+          產品
+        <% end %>
+      </li>
+      <li> 
+        <%= link_to(admin_carousels_path, class: "waves-effect") do %>
+          <i class="fa fa-picture-o"></i>
+          活動橫幅
+        <% end %>
+      </li>
       <li class="has_sub"> 
       <a href="system_user.html" class="waves-effect"><i class="md-settings"></i>系統管理<span class="pull-right"><i class="md md-add"></i></span></a>
         <ul class="list-unstyled">

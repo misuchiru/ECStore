@@ -2,7 +2,11 @@
 <div class="topbar"> 
 <!-- LOGO -->
 <div class="topbar-left">
-  <div class="text-center"> <a href="index.html" class="logo"><span>ECStore管理系統</span></a> </div>
+  <div class="text-center"> 
+    <%= link_to(admin_products_path, class: "logo") do %>
+      <span>ECStore管理系統</span>
+    <% end %>
+  </div>
 </div>
 <!-- Button mobile view to collapse sidebar menu -->
 <div class="navbar navbar-default" role="navigation">

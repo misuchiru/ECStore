@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :admin do
   	root 'products#index'
     resources :products
+    resources :carousels
     resources :orders do
       member do
         post :cancel
