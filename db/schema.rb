@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151204043017) do
+ActiveRecord::Schema.define(version: 20151204155721) do
+
+  create_table "carousel_photos", force: :cascade do |t|
+    t.integer  "carousel_id"
+    t.string   "image"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "carousels", force: :cascade do |t|
     t.string   "title"

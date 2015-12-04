@@ -4,6 +4,7 @@ class Admin::CarouselsController < AdminController
 	end
 	def new
 		@carousel = Carousel.new
+		@photo = @carousel.build_carousel_photo
 	end
 	def create
 		@carousel = Carousel.new(carousel_params)
@@ -15,6 +16,11 @@ class Admin::CarouselsController < AdminController
 	end
 	def edit
 		@carousel = Carousel.find(params[:id])
+		if @carousel.carousel_photo.present?
+			@carousel_photo = @carousel.carousel_photo
+		else
+			@carousel_photo = @carousel.build_carousel_photo
+		end
 	end
 	def update
 		@carousel = Carousel.find(params[:id])
@@ -26,6 +32,6 @@ class Admin::CarouselsController < AdminController
 	end
 	private
 	def carousel_params
-		params.require(:carousel).permit(:title, :description)
+		params.require(:carousel).permit(:title, :description,  carousel_photo_attributes: [:image, :id])
 	end
 end

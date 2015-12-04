@@ -11,6 +11,7 @@
       <th>#</th>
       <th>標題</th>
       <th>說明</th>
+      <th>橫幅</th>
       <th>操作</th>
     </tr>
   </thead>
@@ -25,6 +26,13 @@
         </td>
         <td>
           <%= carousel.description %>
+        </td>
+        <td>
+          <% if carousel.carousel_photo.present? %>
+            <%= image_tag(carousel.carousel_photo.image.small.url, class: "thumbnail") %>
+          <% else %>
+            <%= image_tag("http://placehold.it/200x100&text=No Pic", class: "thumbnail") %>
+          <% end %>
         </td>
         <td>
           <%= link_to(edit_admin_carousel_path(carousel), class: "btn btn-success btn-sm waves-effect waves-light") do %>
